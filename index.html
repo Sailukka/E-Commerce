@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple E-Commerce Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Shop<span>Lite</span></div>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <div class="cart-icon" id="cart-toggle">
+      🛒
+      <span class="cart-count" id="cart-count">0</span>
+    </div>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Shop the Latest Products</h1>
+      <p>High-quality items, great prices, and fast delivery.</p>
+      <a href="#products" class="btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <main class="main-content">
+    <section class="products-section" id="products">
+      <h2>Featured Products</h2>
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be injected here by JavaScript -->
+      </div>
+    </section>
+
+    <!-- About / Footer Info -->
+    <section class="about-section" id="about">
+      <h2>About ShopLite</h2>
+      <p>
+        This is a demo e-commerce website built using pure HTML, CSS, and JavaScript.
+        You can extend it with real products, user accounts, and payment integration.
+      </p>
+    </section>
+  </main>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="cart-close" id="cart-close">&times;</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be injected here -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button class="btn-primary" id="checkout-btn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Overlay for cart -->
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
